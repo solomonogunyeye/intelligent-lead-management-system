@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leadlift"
+version = "0.1.0"
+description = "AI-assisted lead management and follow-up automation for small service businesses"
+requires-python = ">=3.10"
+
+dependencies = [
+    "streamlit",
+    "pydantic",
+    "pydantic-settings",
+    "sqlcipher3",
+    "argon2-cffi",
+    "keyring",
+]
+
+[project.optional-dependencies]
+browser = [
+    "beautifulsoup4",
+    "lxml",
+    "playwright",
+]
+gmail = [
+    "beautifulsoup4",
+    "google-api-python-client",
+    "google-auth",
+    "google-auth-oauthlib",
+    "cryptography",
+]
+ai = [
+    "ollama",
+]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "black",
+    "isort",
+    "mypy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["leadlift*"]
