@@ -119,7 +119,7 @@ pytest tests/
 
 ## 📄 License
 
-This project is provided as-is for portfolio and educational purposes. Important information excluded under Non-disclosure
+This project is provided as-is for portfolio and educational purposes. Important information excluded under Non-disclosure.
 
 ---
 
